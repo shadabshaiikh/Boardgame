@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: boardgame-pod
+  namespace: boardgameapp
+
+spec:
+  containers:
+    - name: boardgame
+      image: shadabsk/boardgame:latest
+      ports:
+        - containerPort: 8080
